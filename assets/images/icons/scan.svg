@@ -1,0 +1,22 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_0_5164" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="10" width="24" height="3">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M-0.000306872 10.6735V12.6737H23.9996V10.6735H-0.000306872Z" fill="#FD9A16"/>
+</mask>
+<g mask="url(#mask0_0_5164)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.3701 10.6735H0.629344C0.285884 10.6735 -0.000376879 10.9567 -0.000376879 11.3064V12.0408C-0.000376879 12.3955 0.281484 12.6737 0.629344 12.6737H23.3701C23.7134 12.6737 23.9997 12.3903 23.9997 12.0408V11.3064C23.9997 10.9516 23.7178 10.6735 23.3701 10.6735Z" fill="#EA4E0D"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.00124 20.6748V14.6735H-0.000268572V22.2171C-0.000268572 23.2022 0.799182 24.0002 1.78535 24.0002H8.67298V22.0015H3.33003C2.59607 22.0016 2.00124 21.4034 2.00124 20.6748" fill="#1677FF"/>
+<mask id="mask1_0_5164" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="9" height="8">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M8.673 7.45798e-05H-0.000268575V7.99989H8.673V7.45798e-05Z" fill="#1677FF"/>
+</mask>
+<g mask="url(#mask1_0_5164)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M2.00124 3.32778C2.00124 2.59454 2.60021 2.00002 3.33003 2.00002H8.67298V6.45746e-05H1.78535C0.798902 6.45746e-05 -0.000268572 0.798897 -0.000268572 1.7843V7.9999H2.00124V3.32778Z" fill="#1677FF"/>
+</g>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.0001 20.6748C22.0001 21.4075 21.4018 22.0016 20.6729 22.0016H15.3361V24.0002H22.2158C23.2011 24.0002 23.9993 23.2019 23.9993 22.2172V14.6735H22.0001V20.6748" fill="#1677FF"/>
+<mask id="mask2_0_5164" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="15" y="0" width="9" height="9">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.9993 7.45044e-05H15.336V8.00017H23.9993V7.45044e-05Z" fill="#1677FF"/>
+</mask>
+<g mask="url(#mask2_0_5164)">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M22.2157 6.44987e-05H15.336V2.00006H20.6728C21.4059 2.00006 22.0001 2.59871 22.0001 3.32784V8.00018H23.9993V1.78433C23.9993 0.79863 23.2008 6.44987e-05 22.2157 6.44987e-05" fill="#1677FF"/>
+</g>
+</svg>
