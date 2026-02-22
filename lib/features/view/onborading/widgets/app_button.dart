@@ -1,6 +1,4 @@
-// import 'package:fintech_app/core/resources/app_strings.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter/material.dart';
 
 class AppButton extends StatelessWidget {
   final String text;

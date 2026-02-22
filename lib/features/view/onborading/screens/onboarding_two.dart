@@ -1,4 +1,3 @@
-// import 'package:fintech_app/core/constants/app_theme.dart';
 import 'package:fintech_app/core/constants/app_theme.dart';
 import 'package:fintech_app/core/resources/app_images_assets.dart';
 import 'package:fintech_app/core/resources/app_strings.dart';
@@ -6,10 +5,9 @@ import 'package:fintech_app/features/view/widgets/account_check_text.dart';
 import 'package:fintech_app/features/view/onborading/widgets/background_onboarding.dart';
 import 'package:fintech_app/features/view/onborading/widgets/app_button.dart';
 import 'package:fintech_app/features/view/onborading/widgets/photo.dart';
-// import 'package:fintech_app/features/view/widgets/onboarding/skip_button.dart';
+
 import 'package:fintech_app/features/view/onborading/widgets/titleonboarding.dart';
 import 'package:flutter/material.dart';
-// import 'package:flutter_svg/svg.dart';
 
 class OnboardingTwo extends StatelessWidget {
   const OnboardingTwo({super.key});
