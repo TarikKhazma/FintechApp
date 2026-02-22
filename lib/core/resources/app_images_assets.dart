@@ -16,6 +16,8 @@ class PngImages {
   static const welcomequickpay = '${_pngRelativePath}welcome_quickpay.png';
   static const screencreateacoount =
       '${_pngRelativePath}screen_create_account.png';
+  static const screencreateasuccess =
+      '${_pngRelativePath}create_account_success.png';
   // welcome_quickpay
   // screen_create_account.png
 }
@@ -45,7 +47,9 @@ class SvgImages {
   static const createaccountscreen =
       '${_svgRelativePath}create_account_screenn.svg';
   static const createaccountsuccessscreen =
-      '${_svgRelativePath}create_account_success_screen.svg';
+      '${_svgRelativePath}create_account_success.svg';
+
+  static const success = '${_svgRelativePath}success.svg';
 }
 
 class IconImages {

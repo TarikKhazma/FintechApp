@@ -10,6 +10,7 @@ String SUBMIT = 'Submit';
 String LOGOUT = 'Logout';
 String SINGUP = 'Sing Up';
 String SINGIN = 'Sing In';
+String SUCCESS = 'Success!';
 // ignore: constant_identifier_names
 const String CREATEANACCOUNT = 'Create an account';
 String ACCOUNTCREATE = '✅ Account Created';
@@ -25,6 +26,8 @@ String SIGNUPWITHEMAIL = 'Sign up with Email';
 
 String PRIVACYPOLICYANDTERMS =
     'By signing up you agree to our Privacy Policy and Terms.';
+
+String CHECKEMAIL = 'Now check your email for\nconfirmation link.';
 
 // onboardings
 // في الشاشة

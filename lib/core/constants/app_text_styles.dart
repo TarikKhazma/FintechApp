@@ -25,6 +25,22 @@ TextStyle textNormal = TextStyle(
   color: black,
 );
 
+// textBody
+TextStyle textBody = TextStyle(
+  fontSize: 25,
+  fontWeight: FontWeight.w500,
+  fontFamily: _fontFamily,
+  color: black,
+);
+
+// textTitleLarge
+TextStyle textTitleLarge = TextStyle(
+  fontSize: 30,
+  fontWeight: FontWeight.bold,
+  fontFamily: _fontFamily,
+  color: black,
+);
+
 // text PrivacyPolicyAndTerms
 TextStyle textPPT = TextStyle(
   fontSize: 13,
