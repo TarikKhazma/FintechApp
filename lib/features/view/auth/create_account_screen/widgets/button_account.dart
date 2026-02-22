@@ -1,6 +1,8 @@
 import 'package:fintech_app/core/constants/app_colors.dart';
 import 'package:fintech_app/core/constants/app_text_styles.dart';
 import 'package:fintech_app/core/constants/app_theme.dart';
+import 'package:fintech_app/core/navigation/app_navigator.dart';
+import 'package:fintech_app/core/navigation/app_routes.dart';
 import 'package:fintech_app/core/resources/app_strings.dart';
 import 'package:fintech_app/features/view/auth/widgets/account_singin.dart';
 import 'package:fintech_app/features/view/auth/widgets/privacy_policy_and_terms.dart';
@@ -54,7 +56,9 @@ class ButtonAccount extends StatelessWidget {
               ),
             ),
             child: ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                AppNavigator.replace(context, AppRoutes.singupemail);
+              },
               child: Text(SIGNUPWITHEMAIL, style: textButton),
             ),
           ),

@@ -1,4 +1,6 @@
 import 'package:fintech_app/core/constants/app_theme.dart';
+import 'package:fintech_app/core/navigation/app_navigator.dart';
+import 'package:fintech_app/core/navigation/app_routes.dart';
 import 'package:fintech_app/core/resources/app_images_assets.dart';
 import 'package:fintech_app/core/resources/app_strings.dart';
 import 'package:fintech_app/features/view/widgets/account_check_text.dart';
@@ -40,7 +42,7 @@ class OnboardingOne extends StatelessWidget {
               AppButton(
                 text: CREATEANACCOUNT,
                 onPressed: () {
-                  // action
+                  AppNavigator.replace(context, AppRoutes.createAccount);
                 },
               ),
 

@@ -11,7 +11,7 @@ class Background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(const Duration(seconds: 2), () {
+    Future.delayed(const Duration(seconds: 5), () {
       // ignore: use_build_context_synchronously
       AppNavigator.replace(context, AppRoutes.onboarding);
     });
