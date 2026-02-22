@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'app_routes.dart';
 
 class AppNavigator {
   static void push(BuildContext context, String route) {
