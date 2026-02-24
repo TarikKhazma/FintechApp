@@ -7,30 +7,28 @@ class SuccessBackground extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final height = MediaQuery.of(context).size.height;
+    final size = MediaQuery.of(context).size;
 
     return Scaffold(
-      resizeToAvoidBottomInset: false,
       body: Stack(
+        clipBehavior: Clip.none,
         children: [
-          /// الجزء العلوي أزرق
-          Container(height: height * 0.1, color: Colors.blue),
+          Container(height: size.height * 0.22, color: Colors.blue),
 
-          /// الجزء السفلي أبيض مقوس
-          Container(
-            child: Align(
-              alignment: Alignment.bottomCenter,
-              child: Container(
-                height: height * 0.3,
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.only(
-                    topLeft: Radius.circular(50),
-                    topRight: Radius.circular(50),
-                  ),
+          Positioned(
+            top: size.height * 0.22 - 60,
+            left: 0,
+            right: 0,
+            child: Container(
+              height: size.height * 0.70,
+              decoration: const BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20),
+                  topRight: Radius.circular(20),
                 ),
-                child: child,
               ),
+              child: SafeArea(top: false, child: child),
             ),
           ),
         ],

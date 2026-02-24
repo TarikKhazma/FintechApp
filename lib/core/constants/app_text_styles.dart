@@ -36,7 +36,7 @@ TextStyle textBody = TextStyle(
 // textTitleLarge
 TextStyle textTitleLarge = TextStyle(
   fontSize: 30,
-  fontWeight: FontWeight.bold,
+  fontWeight: FontWeight.w800,
   fontFamily: _fontFamily,
   color: black,
 );

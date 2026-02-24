@@ -7,10 +7,12 @@ class SuccessIcon extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
     return SvgPicture.asset(
-      SvgImages.success, // مسار SVG لعلامة الصح
-      width: 120,
-      height: 120,
+      SvgImages.success,
+      width: size.width * 0.28,
+      height: size.width * 0.28,
     );
   }
 }
