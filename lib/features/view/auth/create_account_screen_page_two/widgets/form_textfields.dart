@@ -1,9 +1,11 @@
 import 'package:fintech_app/core/constants/app_text_styles.dart';
 import 'package:fintech_app/core/constants/app_theme.dart';
+
 import 'package:fintech_app/core/resources/app_images_assets.dart';
 import 'package:fintech_app/core/resources/app_strings.dart';
 import 'package:fintech_app/features/view/auth/create_account_screen_page_two/widgets/form_widget/app_text_field.dart';
 import 'package:fintech_app/features/view/auth/create_account_screen_page_two/widgets/form_widget/create_account_view_model.dart';
+import 'package:fintech_app/features/view/auth/create_account_success/view/create_account_success_screen.dart';
 import 'package:fintech_app/features/view/auth/widgets/account_singin.dart';
 import 'package:fintech_app/features/view/auth/widgets/privacy_policy_and_terms.dart';
 import 'package:flutter/material.dart';
@@ -77,7 +79,7 @@ class FormTextfields extends StatelessWidget {
                       width: 20,
                       height: 20,
                     ),
-                    if (vm.isPasswordHidden)
+                    if (vm.isConfirmPasswordHidden)
                       Transform.rotate(
                         angle: 0.5, // زاوية الراديان، سالب لإمالة الخط
                         child: Container(
@@ -103,7 +105,12 @@ class FormTextfields extends StatelessWidget {
                 child: ElevatedButton(
                   onPressed: () {
                     if (vm.submit()) {
-                      debugPrint(ACCOUNTCREATE);
+                      Navigator.pushReplacement(
+                        context,
+                        MaterialPageRoute(
+                          builder: (_) => const CreateAccountSuccessScreen(),
+                        ),
+                      );
                     }
                   },
                   child: Text(CREATEANACCOUNT, style: textButton),

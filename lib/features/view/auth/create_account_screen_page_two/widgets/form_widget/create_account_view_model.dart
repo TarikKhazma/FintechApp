@@ -27,6 +27,9 @@ class CreateAccountViewModel extends ChangeNotifier {
     if (!value.contains('@')) {
       return 'Invalid email';
     }
+    if (!value.contains('.com')) {
+      return 'Correct email';
+    }
     return null;
   }
 
