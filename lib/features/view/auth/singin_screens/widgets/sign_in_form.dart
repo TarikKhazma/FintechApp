@@ -3,7 +3,6 @@ import 'package:fintech_app/core/constants/app_theme.dart';
 import 'package:fintech_app/core/resources/app_images_assets.dart';
 import 'package:fintech_app/core/resources/app_strings.dart';
 import 'package:fintech_app/features/view/auth/login_screens/create_account_screen_page_two/widgets/form_widget/app_text_field.dart';
-import 'package:fintech_app/features/view/auth/login_screens/create_account_screen_page_two/widgets/form_widget/create_account_view_model.dart';
 import 'package:fintech_app/features/view/auth/singin_screens/widgets/form_widgets/sign_in_view_model.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';

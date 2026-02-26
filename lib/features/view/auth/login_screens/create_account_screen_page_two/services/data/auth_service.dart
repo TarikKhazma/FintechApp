@@ -23,7 +23,6 @@ class AuthService {
       );
 
       final data = jsonDecode(response.body);
-      print(response);
       if (response.statusCode == 200 || response.statusCode == 201) {
         return data; // يحتوي على token و email
       } else {
