@@ -1,6 +1,6 @@
 import 'package:fintech_app/core/constants/app_theme.dart';
-import 'package:fintech_app/features/view/auth/create_account_screen_page_two/services/bloc/singup_bloc.dart';
-import 'package:fintech_app/features/view/auth/create_account_screen_page_two/widgets/form_textfields.dart';
+import 'package:fintech_app/features/view/auth/login_screens/create_account_screen_page_two/services/bloc/singup_bloc.dart';
+import 'package:fintech_app/features/view/auth/login_screens/create_account_screen_page_two/widgets/form_textfields.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:provider/provider.dart';

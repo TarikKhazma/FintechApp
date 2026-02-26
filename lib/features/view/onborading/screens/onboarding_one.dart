@@ -3,6 +3,7 @@ import 'package:fintech_app/core/navigation/app_navigator.dart';
 import 'package:fintech_app/core/navigation/app_routes.dart';
 import 'package:fintech_app/core/resources/app_images_assets.dart';
 import 'package:fintech_app/core/resources/app_strings.dart';
+import 'package:fintech_app/features/view/auth/singin_screens/sign_in_page.dart';
 import 'package:fintech_app/features/view/widgets/account_check_text.dart';
 import 'package:fintech_app/features/view/onborading/widgets/background_onboarding.dart';
 import 'package:fintech_app/features/view/onborading/widgets/app_button.dart';
@@ -52,7 +53,10 @@ class OnboardingOne extends StatelessWidget {
                 questionText: ALREADYHAVEANACCOUNT,
                 actionText: SINGIN,
                 onTap: () {
-                  // Navgiter
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (_) => const SignInPage()),
+                  );
                 },
               ),
             ],

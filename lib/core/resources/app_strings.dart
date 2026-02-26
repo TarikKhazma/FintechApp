@@ -16,6 +16,7 @@ const String CREATEANACCOUNT = 'Create an account';
 String ACCOUNTCREATE = '✅ Account Created';
 
 String CREATEANACCOUNTT = 'Create an\naccount.';
+String SIGNACCOUNT = 'Sign in to your account';
 String ALREADYHAVEANACCOUNT = 'Already have an account? ';
 String SIGNINWITHGOOGLE = 'Sign in with Google';
 String SIGNINWITHAPPLE = 'Sign in with Apple';

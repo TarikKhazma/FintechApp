@@ -35,30 +35,3 @@ class AuthService {
     }
   }
 }
-
-// import 'dart:convert';
-// import 'package:http/http.dart' as http;
-
-// class AuthService {
-//   static String baseUrl = 'http://localhost:5000';
-//   static String proxy = 'https://corsproxy.io/?';
-//   // REGISTER
-//   static Future<Map<String, dynamic>> register({
-//     required String email,
-//     required String password,
-//     required String confirmPassword,
-//   }) async {
-//     final response = await http.post(
-//       Uri.parse('$proxy$baseUrl/api/auth/register'),
-//       headers: {'Content-Type': 'application/json'},
-//       body: jsonEncode({
-//         'email': email,
-//         'password': password,
-//         'confirmPassword': confirmPassword,
-//       }),
-//     );
-
-//     final data = jsonDecode(response.body);
-//     return data;
-//   }
-// }

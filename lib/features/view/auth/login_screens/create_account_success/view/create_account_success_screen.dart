@@ -1,4 +1,4 @@
-import 'package:fintech_app/features/view/auth/create_account_success/view/widgets/success_icons_cloes.dart';
+import 'package:fintech_app/features/view/auth/login_screens/create_account_success/view/widgets/success_icons_cloes.dart';
 import 'package:flutter/material.dart';
 import 'widgets/success_background.dart';
 import 'widgets/success_icon.dart';

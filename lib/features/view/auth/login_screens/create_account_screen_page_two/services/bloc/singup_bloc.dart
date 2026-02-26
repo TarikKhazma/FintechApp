@@ -1,4 +1,4 @@
-import 'package:fintech_app/features/view/auth/create_account_screen_page_two/services/data/auth_service.dart';
+import 'package:fintech_app/features/view/auth/login_screens/create_account_screen_page_two/services/data/auth_service.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'singup_state.dart';
 import 'singup_event.dart';
