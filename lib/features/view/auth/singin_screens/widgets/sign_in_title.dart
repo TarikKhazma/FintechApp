@@ -7,10 +7,6 @@ class SignInTitle extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      // top: MediaQuery.of(context).padding.top + 50,
-      left: 14,
-      child: Text(SIGNACCOUNT, style: text),
-    );
+    return Text(SIGNACCOUNT, style: text);
   }
 }

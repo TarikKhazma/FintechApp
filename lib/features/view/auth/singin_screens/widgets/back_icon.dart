@@ -7,15 +7,9 @@ class IconArrowLeft extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Positioned(
-      top: MediaQuery.of(context).padding.top + 50,
-      left: 14,
-      child: IconButton(
-        onPressed: () {
-          Navigator.pop(context);
-        },
-        icon: SvgPicture.asset(IconImages.iconarrowleft, width: 24, height: 24),
-      ),
+    return IconButton(
+      onPressed: () => Navigator.pop(context),
+      icon: SvgPicture.asset(IconImages.iconarrowleft, width: 24, height: 24),
     );
   }
 }
