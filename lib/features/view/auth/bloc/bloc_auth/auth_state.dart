@@ -1,33 +1,29 @@
-enum SignupStatus { initial, loading, success, error }
+enum AuthStatus { initial, loading, success, error }
 
 class AuthState {
-  final SignupStatus status;
-  final String? error;
+  final AuthStatus status;
   final String? token;
   final String? email;
-  final String? success;
+  final String? error;
 
   const AuthState({
-    this.status = SignupStatus.initial,
-    this.error,
+    this.status = AuthStatus.initial,
     this.token,
     this.email,
-    this.success,
+    this.error,
   });
 
   AuthState copyWith({
-    SignupStatus? status,
-    String? error,
+    AuthStatus? status,
     String? token,
     String? email,
-    String? success,
+    String? error,
   }) {
     return AuthState(
       status: status ?? this.status,
-      error: error,
-      success: success,
       token: token ?? this.token,
       email: email ?? this.email,
+      error: error,
     );
   }
 }

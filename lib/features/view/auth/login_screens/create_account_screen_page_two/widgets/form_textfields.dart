@@ -2,9 +2,10 @@ import 'package:fintech_app/core/constants/app_text_styles.dart';
 import 'package:fintech_app/core/constants/app_theme.dart';
 import 'package:fintech_app/core/resources/app_images_assets.dart';
 import 'package:fintech_app/core/resources/app_strings.dart';
-import 'package:fintech_app/features/view/auth/login_screens/create_account_screen_page_two/services/bloc/singup_bloc.dart';
-import 'package:fintech_app/features/view/auth/login_screens/create_account_screen_page_two/services/bloc/singup_event.dart';
-import 'package:fintech_app/features/view/auth/login_screens/create_account_screen_page_two/services/bloc/singup_state.dart';
+import 'package:fintech_app/features/view/auth/bloc/bloc_auth/auth_bloc.dart';
+import 'package:fintech_app/features/view/auth/bloc/bloc_auth/auth_event.dart';
+import 'package:fintech_app/features/view/auth/bloc/bloc_auth/auth_state.dart';
+
 import 'package:fintech_app/features/view/auth/login_screens/create_account_screen_page_two/widgets/form_widget/app_text_field.dart';
 import 'package:fintech_app/features/view/auth/login_screens/create_account_screen_page_two/widgets/form_widget/create_account_view_model.dart';
 import 'package:fintech_app/features/view/auth/login_screens/create_account_success/view/create_account_success_screen.dart';
@@ -22,7 +23,7 @@ class FormTextfields extends StatelessWidget {
     final vm = context.watch<CreateAccountViewModel>();
     return BlocConsumer<AuthBloc, AuthState>(
       listener: (context, state) {
-        if (state.status == SignupStatus.success) {
+        if (state.status == AuthStatus.success) {
           // أولاً أرسل الـ SnackBar
           ScaffoldMessenger.of(
             context,
@@ -37,14 +38,14 @@ class FormTextfields extends StatelessWidget {
           );
         }
 
-        if (state.status == SignupStatus.error) {
+        if (state.status == AuthStatus.error) {
           ScaffoldMessenger.of(
             context,
           ).showSnackBar(SnackBar(content: Text(state.error ?? 'حدث خطأ')));
         }
       },
       builder: (context, state) {
-        final loading = state.status == SignupStatus.loading;
+        final loading = state.status == AuthStatus.loading;
         return Positioned(
           top: 220,
           left: 20,

@@ -1,5 +1,6 @@
 import 'package:fintech_app/core/constants/app_theme.dart';
-import 'package:fintech_app/features/view/auth/login_screens/create_account_screen_page_two/services/bloc/singup_bloc.dart';
+import 'package:fintech_app/features/view/auth/bloc/bloc_auth/auth_bloc.dart';
+import 'package:fintech_app/features/view/auth/data/repositories/auth_repository.dart';
 import 'package:fintech_app/features/view/auth/login_screens/create_account_screen_page_two/widgets/form_textfields.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -19,7 +20,7 @@ class CreateAccountScreenPageTwo extends StatelessWidget {
         ChangeNotifierProvider(create: (_) => CreateAccountViewModel()),
       ],
       child: BlocProvider(
-        create: (_) => AuthBloc(),
+        create: (_) => AuthBloc(AuthRepository()),
         child: const _CreateAccountView(),
       ),
     );
