@@ -1,4 +1,3 @@
-// ----------------- sign_in_page.dart -----------------
 import 'package:fintech_app/core/constants/app_text_styles.dart';
 import 'package:fintech_app/core/constants/app_theme.dart';
 import 'package:fintech_app/core/resources/app_images_assets.dart';
@@ -33,6 +32,7 @@ class SignInFormTextfields extends StatelessWidget {
           final token = state.token;
           if (token != null) {
             await storage.write(key: 'auth_token', value: token);
+            // ignore: use_build_context_synchronously
             Navigator.pushReplacementNamed(context, '/home');
           }
         } else if (state.status == AuthStatus.error) {
