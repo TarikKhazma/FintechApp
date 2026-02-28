@@ -26,7 +26,9 @@ class AuthApiService {
     if (response.statusCode == 200 || response.statusCode == 201) {
       return AuthModel.fromJson(data);
     }
+    // ignore: avoid_print
     print(response.statusCode);
+    // ignore: avoid_print
     print(response.body);
     throw Exception(data['message'] ?? 'Signup failed');
   }
@@ -47,7 +49,9 @@ class AuthApiService {
     if (response.statusCode == 200) {
       return AuthModel.fromJson(data);
     }
+    // ignore: avoid_print
     print(response.statusCode);
+    // ignore: avoid_print
     print(response.body);
     throw Exception(data['message'] ?? 'Signin failed');
   }
