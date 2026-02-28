@@ -3,8 +3,7 @@ import 'package:http/http.dart' as http;
 import '../models/auth_model.dart';
 
 class AuthApiService {
-  static const String _proxy = 'https://corsproxy.io/?';
-  static const String _baseUrl = 'http://localhost:5000/api/auth';
+  static const String _baseUrl = 'http://192.168.8.123:3000/auth';
 
   /// SIGN UP
   static Future<AuthModel> signup({
@@ -13,7 +12,7 @@ class AuthApiService {
     required String confirmPassword,
   }) async {
     final response = await http.post(
-      Uri.parse('$_proxy$_baseUrl/register'),
+      Uri.parse('$_baseUrl/signup'),
       headers: {'Content-Type': 'application/json'},
       body: jsonEncode({
         'email': email,
@@ -27,7 +26,8 @@ class AuthApiService {
     if (response.statusCode == 200 || response.statusCode == 201) {
       return AuthModel.fromJson(data);
     }
-
+    print(response.statusCode);
+    print(response.body);
     throw Exception(data['message'] ?? 'Signup failed');
   }
 
@@ -37,7 +37,7 @@ class AuthApiService {
     required String password,
   }) async {
     final response = await http.post(
-      Uri.parse('$_proxy$_baseUrl/login'),
+      Uri.parse('$_baseUrl/signin'),
       headers: {'Content-Type': 'application/json'},
       body: jsonEncode({'email': email, 'password': password}),
     );
@@ -47,7 +47,8 @@ class AuthApiService {
     if (response.statusCode == 200) {
       return AuthModel.fromJson(data);
     }
-
+    print(response.statusCode);
+    print(response.body);
     throw Exception(data['message'] ?? 'Signin failed');
   }
 }
