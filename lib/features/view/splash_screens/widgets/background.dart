@@ -1,9 +1,8 @@
-import 'package:fintech_app/core/navigation/app_navigator.dart';
-import 'package:fintech_app/core/navigation/app_routes.dart';
 import 'package:fintech_app/core/resources/app_images_assets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+/// Pure visual wrapper — navigation is handled by [SplashScreens].
 class Background extends StatelessWidget {
   final Widget child;
 
@@ -11,19 +10,12 @@ class Background extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Future.delayed(const Duration(seconds: 5), () {
-      // ignore: use_build_context_synchronously
-      AppNavigator.replace(context, AppRoutes.onboarding);
-    });
     return Scaffold(
       body: Stack(
         children: [
-          /// SVG Background
           Positioned.fill(
             child: SvgPicture.asset(SvgImages.landingscreen, fit: BoxFit.cover),
           ),
-
-          /// Content فوق الخلفية
           child,
         ],
       ),

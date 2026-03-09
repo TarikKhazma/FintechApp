@@ -17,7 +17,7 @@ class AuthRepository {
       confirmPassword: confirmPassword,
     );
 
-    await SecureStorageService.saveToken(result.token);
+    if (result.token != null) await SecureStorageService.saveToken(result.token!);
     return result;
   }
 
@@ -31,7 +31,7 @@ class AuthRepository {
       password: password,
     );
 
-    await SecureStorageService.saveToken(result.token);
+    if (result.token != null) await SecureStorageService.saveToken(result.token!);
     return result;
   }
 

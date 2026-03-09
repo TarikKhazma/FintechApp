@@ -1,0 +1,129 @@
+{
+  "@@locale": "en",
+
+  "appTitle": "FintechApp",
+  "@appTitle": { "description": "Application title" },
+
+  "welcomeBack": "Welcome back",
+  "@welcomeBack": { "description": "Greeting on dashboard" },
+
+  "goodMorning": "Good morning",
+  "@goodMorning": { "description": "Morning greeting" },
+
+  "goodAfternoon": "Good afternoon",
+  "@goodAfternoon": { "description": "Afternoon greeting" },
+
+  "goodEvening": "Good evening",
+  "@goodEvening": { "description": "Evening greeting" },
+
+  "totalBalance": "Total Balance",
+  "@totalBalance": { "description": "Balance card label" },
+
+  "availableBalance": "Available Balance",
+  "@availableBalance": {},
+
+  "send": "Send",
+  "@send": {},
+
+  "receive": "Receive",
+  "@receive": {},
+
+  "topUp": "Top Up",
+  "@topUp": {},
+
+  "pay": "Pay",
+  "@pay": {},
+
+  "transactions": "Transactions",
+  "@transactions": {},
+
+  "recentTransactions": "Recent Transactions",
+  "@recentTransactions": {},
+
+  "seeAll": "See All",
+  "@seeAll": {},
+
+  "income": "Income",
+  "@income": {},
+
+  "expense": "Expense",
+  "@expense": {},
+
+  "transfer": "Transfer",
+  "@transfer": {},
+
+  "home": "Home",
+  "@home": {},
+
+  "wallet": "Wallet",
+  "@wallet": {},
+
+  "profile": "Profile",
+  "@profile": {},
+
+  "notifications": "Notifications",
+  "@notifications": {},
+
+  "settings": "Settings",
+  "@settings": {},
+
+  "darkMode": "Dark Mode",
+  "@darkMode": {},
+
+  "language": "Language",
+  "@language": {},
+
+  "signOut": "Sign Out",
+  "@signOut": {},
+
+  "signIn": "Sign In",
+  "@signIn": {},
+
+  "signUp": "Sign Up",
+  "@signUp": {},
+
+  "email": "Email",
+  "@email": {},
+
+  "password": "Password",
+  "@password": {},
+
+  "confirmPassword": "Confirm Password",
+  "@confirmPassword": {},
+
+  "monthlySpending": "Monthly Spending",
+  "@monthlySpending": {},
+
+  "savingsGoal": "Savings Goal",
+  "@savingsGoal": {},
+
+  "cardNumber": "Card Number",
+  "@cardNumber": {},
+
+  "noTransactions": "No transactions yet",
+  "@noTransactions": {},
+
+  "retry": "Retry",
+  "@retry": {},
+
+  "cancel": "Cancel",
+  "@cancel": {},
+
+  "confirm": "Confirm",
+  "@confirm": {},
+
+  "amount": "Amount",
+  "@amount": {},
+
+  "description": "Description",
+  "@description": {},
+
+  "successful": "Successful",
+  "@successful": {},
+
+  "failed": "Failed",
+  "@failed": {},
+
+  "pending": "Pending",
+  "@pending": {}
+}

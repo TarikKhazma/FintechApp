@@ -1,0 +1,57 @@
+{
+  "@@locale": "ar",
+
+  "appTitle": "فينتك",
+
+  "welcomeBack": "مرحباً بعودتك",
+  "goodMorning": "صباح الخير",
+  "goodAfternoon": "مساء الخير",
+  "goodEvening": "مساء النور",
+
+  "totalBalance": "الرصيد الكلي",
+  "availableBalance": "الرصيد المتاح",
+
+  "send": "إرسال",
+  "receive": "استقبال",
+  "topUp": "شحن",
+  "pay": "دفع",
+
+  "transactions": "المعاملات",
+  "recentTransactions": "المعاملات الأخيرة",
+  "seeAll": "عرض الكل",
+
+  "income": "وارد",
+  "expense": "صادر",
+  "transfer": "تحويل",
+
+  "home": "الرئيسية",
+  "wallet": "المحفظة",
+  "profile": "الملف الشخصي",
+  "notifications": "الإشعارات",
+  "settings": "الإعدادات",
+
+  "darkMode": "الوضع الليلي",
+  "language": "اللغة",
+
+  "signOut": "تسجيل الخروج",
+  "signIn": "تسجيل الدخول",
+  "signUp": "إنشاء حساب",
+
+  "email": "البريد الإلكتروني",
+  "password": "كلمة المرور",
+  "confirmPassword": "تأكيد كلمة المرور",
+
+  "monthlySpending": "الإنفاق الشهري",
+  "savingsGoal": "هدف الادخار",
+  "cardNumber": "رقم البطاقة",
+
+  "noTransactions": "لا توجد معاملات",
+  "retry": "إعادة المحاولة",
+  "cancel": "إلغاء",
+  "confirm": "تأكيد",
+  "amount": "المبلغ",
+  "description": "الوصف",
+  "successful": "ناجح",
+  "failed": "فاشل",
+  "pending": "قيد الانتظار"
+}

@@ -73,6 +73,65 @@ TextStyle textButton = TextStyle(
   color: white,
 );
 
+/// Class-based constants — use these in new code.
+abstract final class AppTextStyles {
+  static const String _font = 'Montserrat';
+
+  static const TextStyle displayLarge = TextStyle(
+    fontSize: 33,
+    fontWeight: FontWeight.w800,
+    fontFamily: _font,
+  );
+
+  static const TextStyle heading1 = TextStyle(
+    fontSize: 30,
+    fontWeight: FontWeight.w800,
+    fontFamily: _font,
+  );
+
+  static const TextStyle heading2 = TextStyle(
+    fontSize: 25,
+    fontWeight: FontWeight.w600,
+    fontFamily: _font,
+  );
+
+  static const TextStyle heading3 = TextStyle(
+    fontSize: 20,
+    fontWeight: FontWeight.w600,
+    fontFamily: _font,
+  );
+
+  static const TextStyle body = TextStyle(
+    fontSize: 17,
+    fontWeight: FontWeight.w400,
+    fontFamily: _font,
+  );
+
+  static const TextStyle bodySmall = TextStyle(
+    fontSize: 14,
+    fontWeight: FontWeight.w400,
+    fontFamily: _font,
+  );
+
+  static const TextStyle button = TextStyle(
+    fontSize: 17,
+    fontWeight: FontWeight.w500,
+    fontFamily: _font,
+  );
+
+  static const TextStyle caption = TextStyle(
+    fontSize: 13,
+    fontWeight: FontWeight.w400,
+    fontFamily: _font,
+  );
+
+  static const TextStyle hint = TextStyle(
+    fontSize: 17,
+    fontWeight: FontWeight.w300,
+    fontFamily: _font,
+  );
+}
+
 // buuton singin
 TextStyle textButtonSingin = TextStyle(
   fontSize: 17,

@@ -1,16 +1,14 @@
 import 'package:fintech_app/core/constants/app_theme.dart';
-import 'package:fintech_app/core/navigation/app_navigator.dart';
 import 'package:fintech_app/core/navigation/app_routes.dart';
 import 'package:fintech_app/core/resources/app_images_assets.dart';
 import 'package:fintech_app/core/resources/app_strings.dart';
-import 'package:fintech_app/features/view/auth/singin_screens/sign_in_page.dart';
 import 'package:fintech_app/features/view/widgets/account_check_text.dart';
 import 'package:fintech_app/features/view/onborading/widgets/background_onboarding.dart';
 import 'package:fintech_app/features/view/onborading/widgets/app_button.dart';
 import 'package:fintech_app/features/view/onborading/widgets/photo.dart';
-
 import 'package:fintech_app/features/view/onborading/widgets/titleonboarding.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 class OnboardingTwo extends StatelessWidget {
   const OnboardingTwo({super.key});
@@ -23,12 +21,10 @@ class OnboardingTwo extends StatelessWidget {
       bSvg: SvgImages.backgroundonboardingtwo,
       child: Stack(
         children: [
-          /// 🔹 المحتوى الأساسي
           SingleChildScrollView(
             child: Theme(
-              data: Theme.of(
-                context,
-              ).copyWith(elevatedButtonTheme: AppTheme.buttonTheme()),
+              data: Theme.of(context)
+                  .copyWith(elevatedButtonTheme: AppTheme.buttonTheme()),
               child: Column(
                 children: [
                   SizedBox(
@@ -44,9 +40,7 @@ class OnboardingTwo extends StatelessWidget {
 
                   AppButton(
                     text: CREATEANACCOUNT,
-                    onPressed: () {
-                      AppNavigator.replace(context, AppRoutes.createAccount);
-                    },
+                    onPressed: () => context.go(AppRoutes.signUp),
                   ),
 
                   const SizedBox(height: 15),
@@ -54,12 +48,7 @@ class OnboardingTwo extends StatelessWidget {
                   AccountCheckText(
                     questionText: ALREADYHAVEANACCOUNT,
                     actionText: SINGIN,
-                    onTap: () {
-                      Navigator.pushReplacement(
-                        context,
-                        MaterialPageRoute(builder: (_) => const SignInPage()),
-                      );
-                    },
+                    onTap: () => context.go(AppRoutes.signIn),
                   ),
 
                   const SizedBox(height: 20),

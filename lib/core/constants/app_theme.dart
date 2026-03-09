@@ -118,4 +118,150 @@ ThemeData(
       ),
     );
   }
+
+  // ===== Full Dark ThemeData =====
+  static ThemeData get dark {
+    return ThemeData(
+      useMaterial3: true,
+      brightness: Brightness.dark,
+      fontFamily: 'Montserrat',
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: AppColorsDark.primary,
+        brightness: Brightness.dark,
+        surface: AppColorsDark.surface,
+        error: AppColorsDark.error,
+      ),
+      scaffoldBackgroundColor: AppColorsDark.background,
+      appBarTheme: const AppBarTheme(
+        backgroundColor: AppColorsDark.background,
+        elevation: 0,
+        centerTitle: true,
+        iconTheme: IconThemeData(color: AppColorsDark.textPrimary),
+        titleTextStyle: TextStyle(
+          fontFamily: 'Montserrat',
+          fontSize: 18,
+          fontWeight: FontWeight.w600,
+          color: AppColorsDark.textPrimary,
+        ),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColorsDark.primary,
+          foregroundColor: Colors.white,
+          minimumSize: const Size(double.infinity, 56),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          textStyle: AppTextStyles.button,
+        ),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: AppColorsDark.surface,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColorsDark.border),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColorsDark.border),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColorsDark.primary, width: 1.5),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColorsDark.error),
+        ),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 16,
+        ),
+      ),
+      navigationBarTheme: NavigationBarThemeData(
+        backgroundColor: AppColorsDark.surface,
+        indicatorColor: AppColorsDark.primaryBg,
+        labelTextStyle: WidgetStateProperty.all(
+          AppTextStyles.caption.copyWith(color: AppColorsDark.textSecondary),
+        ),
+      ),
+      cardTheme: const CardThemeData(
+        color: AppColorsDark.surface,
+        elevation: 0,
+      ),
+    );
+  }
+
+  // ===== Full Light ThemeData =====
+  static ThemeData get light {
+    return ThemeData(
+      useMaterial3: true,
+      fontFamily: 'Montserrat',
+      colorScheme: ColorScheme.fromSeed(
+        seedColor: AppColors.primary,
+        surface: AppColors.background,
+        error: AppColors.error,
+      ),
+      scaffoldBackgroundColor: AppColors.background,
+      appBarTheme: const AppBarTheme(
+        backgroundColor: AppColors.background,
+        elevation: 0,
+        centerTitle: true,
+        iconTheme: IconThemeData(color: AppColors.textPrimary),
+        titleTextStyle: TextStyle(
+          fontFamily: 'Montserrat',
+          fontSize: 18,
+          fontWeight: FontWeight.w600,
+          color: AppColors.textPrimary,
+        ),
+      ),
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ElevatedButton.styleFrom(
+          backgroundColor: AppColors.primary,
+          foregroundColor: Colors.white,
+          minimumSize: const Size(double.infinity, 56),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(12),
+          ),
+          textStyle: AppTextStyles.button,
+        ),
+      ),
+      inputDecorationTheme: InputDecorationTheme(
+        filled: true,
+        fillColor: Colors.white,
+        border: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColors.border),
+        ),
+        enabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColors.border),
+        ),
+        focusedBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColors.primary, width: 1.5),
+        ),
+        errorBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(12),
+          borderSide: const BorderSide(color: AppColors.error),
+        ),
+        contentPadding: const EdgeInsets.symmetric(
+          horizontal: 16,
+          vertical: 16,
+        ),
+      ),
+      navigationBarTheme: NavigationBarThemeData(
+        backgroundColor: AppColors.surface,
+        indicatorColor: AppColors.primaryBg,
+        labelTextStyle: WidgetStateProperty.all(
+          AppTextStyles.caption.copyWith(color: AppColors.textSecondary),
+        ),
+      ),
+      cardTheme: const CardThemeData(
+        color: AppColors.surface,
+        elevation: 0,
+      ),
+    );
+  }
 }
