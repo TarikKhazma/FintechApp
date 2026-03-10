@@ -66,7 +66,6 @@ class IconImages {
   static const iconarrowleft = '${_iconRelativePath}icon_arrow_left.svg';
   static const invest = '${_iconRelativePath}invest.svg';
   static const cup = '${_iconRelativePath}cup.svg';
-  static const dish = '${_iconRelativePath}dish.svg';
   static const more = '${_iconRelativePath}more.svg';
   static const pay = '${_iconRelativePath}pay.svg';
   static const pocket = '${_iconRelativePath}pocket.svg';

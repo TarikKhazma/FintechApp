@@ -5,7 +5,7 @@ import '../../features/auth/presentation/bloc/auth_bloc.dart';
 import '../../features/auth/presentation/pages/sign_in_page.dart';
 import '../../features/auth/presentation/pages/sign_up_page.dart';
 import '../../features/auth/presentation/pages/create_account_success_page.dart';
-import '../../features/dashboard/presentation/pages/dashboard_page.dart';
+import '../../features/view/home/screens/home_screen.dart';
 import '../../features/view/onborading/screens/onboarding_main.dart';
 import '../../features/view/splash_screens/splash_screens.dart';
 import 'app_routes.dart';
@@ -35,8 +35,8 @@ String? _authGuard(BuildContext context, GoRouterState state) {
 }
 
 final GoRouter appRouter = GoRouter(
-  initialLocation: AppRoutes.splash,
-  redirect: _authGuard,
+  initialLocation: AppRoutes.home, // TODO: revert to AppRoutes.splash
+  // redirect: _authGuard,
   routes: [
     GoRoute(
       path: AppRoutes.splash,
@@ -64,7 +64,7 @@ final GoRouter appRouter = GoRouter(
     // ── Protected routes ─────────────────────────────────────────────────
     GoRoute(
       path: AppRoutes.home,
-      builder: (ctx, s) => const DashboardPage(),
+      builder: (ctx, s) => const HomeScreen(),
     ),
     GoRoute(
       path: AppRoutes.transactions,
