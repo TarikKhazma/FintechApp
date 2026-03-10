@@ -12,6 +12,7 @@ import 'app_routes.dart';
 
 /// Auth guard — called on every navigation event.
 /// Redirects unauthenticated users away from protected routes.
+// ignore: unused_element
 String? _authGuard(BuildContext context, GoRouterState state) {
   final authStatus = context.read<AuthBloc>().state.status;
   final location = state.matchedLocation;
